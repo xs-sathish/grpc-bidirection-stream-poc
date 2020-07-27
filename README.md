@@ -2,7 +2,7 @@
 
 ## Setup APP
 ```
-git clone <url>
+git clone git@github.com:xs-sathish/grpc-bidirection-stream-poc.git
 cd grpc-server-poc
 npm i
 ```
