@@ -3,7 +3,7 @@
 ## Setup APP
 ```
 git clone git@github.com:xs-sathish/grpc-bidirection-stream-poc.git
-cd grpc-server-poc
+cd grpc-bidirection-stream-poc
 npm i
 ```
 ## Run Server
