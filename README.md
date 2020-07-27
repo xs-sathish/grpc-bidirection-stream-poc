@@ -1,13 +1,19 @@
 # GRPC - Bi-Directional Streams
 
 ## Setup APP
+```
 git clone <url>
 cd grpc-server-poc
 npm i
+```
 ## Run Server
+```
 node server.js
+```
 ## Run Client
+```
 node client.js
+```
 
 
 ## Client Actions
