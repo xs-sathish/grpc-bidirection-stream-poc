@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package poc;
+
+service PracticeSessionService {
+  rpc practiceSession (stream Message) returns (stream Message) {}
+}
+
+message Message {
+  string type = 1;
+  string data = 2;
+  string error = 3; 
+  string user = 4; 
+}
