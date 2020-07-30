@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run:server": "node server.js",
+    "run:client": "node client.js"
   },
   "author": "",
   "license": "ISC",
@@ -13,6 +15,8 @@
     "cli-color": "^2.0.0",
     "cli-ux": "^5.4.9",
     "grpc": "^1.24.3",
-    "lodash": "^4.17.19"
+    "grpc-promise": "^1.4.0",
+    "lodash": "^4.17.19",
+    "redis": "^3.0.2"
   }
 }

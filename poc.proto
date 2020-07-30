@@ -4,6 +4,7 @@ package poc;
 
 service PracticeSessionService {
   rpc practiceSession (stream Message) returns (stream Message) {}
+  rpc createPracticeSession (createParams) returns (newPracticeSession) {}
 }
 
 message Message {
@@ -11,4 +12,12 @@ message Message {
   string data = 2;
   string error = 3; 
   string user = 4; 
+}
+
+message createParams {
+  string name = 1;
+}
+
+message newPracticeSession {
+  string token = 1;
 }
