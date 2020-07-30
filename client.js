@@ -1,6 +1,6 @@
 const PROTO_PATH = __dirname + '/poc.proto';
 
-const grpc = require('grpc');
+const grpc = require('@grpc/grpc-js');
 const protoLoader = require('@grpc/proto-loader');
 var clc = require("cli-color");
 const { cli } = require('cli-ux')

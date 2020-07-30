@@ -1,6 +1,6 @@
 const PROTO_PATH = __dirname + '/poc.proto';
 
-const grpc = require('grpc');
+const grpc = require('@grpc/grpc-js');
 const protoLoader = require('@grpc/proto-loader');
 var clc = require("cli-color");
 const redis = require('./redis');
@@ -84,8 +84,10 @@ function createPracticeSession(call, callback) {
 function main() {
   let server = new grpc.Server();
   server.addService(pocProto.PracticeSessionService.service, { practiceSession: practiceSession, createPracticeSession: createPracticeSession });
-  server.bind('0.0.0.0:4500', grpc.ServerCredentials.createInsecure());
-  server.start();
+  server.bindAsync('0.0.0.0:4500', grpc.ServerCredentials.createInsecure(), () => {
+    server.start();
+  });
+  
 }
 
 main();
