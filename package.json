@@ -15,7 +15,7 @@
     "@grpc/proto-loader": "^0.5.5",
     "cli-color": "^2.0.0",
     "cli-ux": "^5.4.9",
-    "lodash": "^4.17.19",
+    "lodash": "^4.17.21",
     "redis": "^3.0.2"
   }
 }
